@@ -212,7 +212,6 @@ class CartApi extends Component {
          * renderProducts, show prod with bool, for added or not
          * renderAddToCart, our button for adding selected products to cart
          */
-        listProducts={this.listProducts}
         renderCart={this.renderCart}
         renderSelectedProducts={this.renderSelectedProducts}
         renderProducts={this.renderProducts}
