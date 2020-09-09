@@ -30,19 +30,6 @@ class CartApi extends Component {
       });
   }
 
-  addedProducts = (product) => {
-    const { addedProducts } = this.state.products;
-    if (!addedProducts.includes(product)) {
-      addedProducts.push(product);
-      this.setState({
-        addedProducts: addedProducts,
-      });
-    } else {
-      var filteredArray = addedProducts.filter((item) => item !== product);
-      this.setState({ addedProducts: filteredArray });
-    }
-  };
-
   selectProduct = (product) => {
     if (!this.state.listSelectedProducts.includes(product)) {
       this.setState({
